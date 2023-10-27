@@ -24,50 +24,52 @@
         app:layout_constraintVertical_bias="0.001" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/botonLlamada"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="412dp"
         android:adjustViewBounds="false"
-        android:background="#84F889"
+        android:background="#84F8E7"
         android:cropToPadding="false"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:srcCompat="@android:drawable/sym_action_call" />
+        app:srcCompat="@mipmap/ic_llamada_round"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="412dp"
+        tools:srcCompat="@mipmap/ic_llamada_round" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/botonAlarma"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="260dp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.817"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="@+id/botonInternet"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/botonInternet"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="72dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2"
-        app:layout_constraintVertical_bias="0.823"
         app:srcCompat="@mipmap/ic_internet_foreground" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/botonMusica"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:background="#D1D138"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="576dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/botonInternet"
+        app:layout_constraintTop_toBottomOf="@+id/botonAlarma"
+        app:layout_constraintVertical_bias="0.544"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
