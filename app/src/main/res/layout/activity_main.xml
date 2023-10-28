@@ -31,7 +31,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:adjustViewBounds="false"
-        android:background="#84F8E7"
+        android:background="@android:color/transparent"
         android:cropToPadding="false"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/botonInternet"
@@ -43,7 +43,7 @@
         app:srcCompat="@mipmap/ic_llamada_round"
         tools:srcCompat="@mipmap/ic_llamada_round" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/botonAlarma"
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -55,18 +55,20 @@
         app:layout_constraintTop_toBottomOf="@+id/imagen_adorno_imagen"
         app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/botonInternet"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="48dp"
+        android:background="@android:color/transparent"
         android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonLlamada"
-        app:srcCompat="@mipmap/ic_internet" />
+        app:srcCompat="@mipmap/ic_internet_foreground" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/botonMusica"
         android:layout_width="120dp"
         android:layout_height="120dp"

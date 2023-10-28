@@ -18,12 +18,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
          botonLlamar = findViewById<ImageButton>(R.id.botonLlamada)
+        botonInternet = findViewById<ImageButton>(R.id.botonInternet)
 
         botonLlamar.setOnClickListener{ view ->
             var intentLlamar = Intent(this, Llamar::class.java)
             startActivity(intentLlamar)
         }
-
+        botonInternet.setOnClickListener{ view ->
+            var intentInternet = Intent(this, Internet::class.java)
+            startActivity(intentInternet)
+        }
 
     }
 }
