@@ -14,6 +14,7 @@ class Musica: AppCompatActivity() {
     private lateinit var botonPlay: Button
     private lateinit var  botonPause: Button
     private lateinit var botonStop: Button
+    private lateinit var botonHome: Button
     var mMediaPlayer: MediaPlayer? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +23,7 @@ class Musica: AppCompatActivity() {
         val botonplay = findViewById<Button>(R.id.botonPlay)
         val botonpause = findViewById<Button>(R.id.botonPause)
         val botonstop = findViewById<Button>(R.id.botonStop)
+        val botonhome = findViewById<Button>(R.id.botonHome)
 
 
 
@@ -51,6 +53,10 @@ class Musica: AppCompatActivity() {
             }
         }
         botonstop.setOnClickListener { stopSound() }
+
+        botonhome.setOnClickListener {
+            super.onBackPressedDispatcher.onBackPressed()
+        }
 
         fun onStop() {
             super.onStop()
