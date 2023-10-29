@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
          botonLlamar = findViewById<ImageButton>(R.id.botonLlamada)
         botonInternet = findViewById<ImageButton>(R.id.botonInternet)
+        botonMusica = findViewById<ImageButton>(R.id.botonMusica)
 
         botonLlamar.setOnClickListener{ view ->
             var intentLlamar = Intent(this, Llamar::class.java)
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         botonInternet.setOnClickListener{ view ->
             var intentInternet = Intent(this, Internet::class.java)
             startActivity(intentInternet)
+        }
+        botonMusica .setOnClickListener{ view ->
+            var intentMusica= Intent(this, Musica::class.java)
+            startActivity(intentMusica)
         }
 
     }
