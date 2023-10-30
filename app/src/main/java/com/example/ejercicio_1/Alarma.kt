@@ -59,11 +59,11 @@ class Alarma: AppCompatActivity() {
             toggleAlarm(10 * 60 * 1000, button10min)
         }
 
-        button5min.setOnClickListener {
+        button15min.setOnClickListener {
             toggleAlarm(15 * 60 * 1000, button15min)
         }
 
-        button10min.setOnClickListener {
+        button20min.setOnClickListener {
             toggleAlarm(20 * 60 * 1000, button20min)
         }
     }

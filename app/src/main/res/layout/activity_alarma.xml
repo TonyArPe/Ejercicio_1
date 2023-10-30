@@ -6,74 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".Alarma">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#000000"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="36dp">
+    <Button
+        android:id="@+id/button_5min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="5 MIN"
+        app:icon="@android:drawable/ic_lock_idle_alarm"
+        app:layout_constraintBottom_toTopOf="@+id/button_10min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button_5min"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="54dp"
-            android:layout_marginTop="167dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginBottom="516dp"
-            android:text="5 MIN"
-            app:icon="@android:drawable/ic_lock_idle_alarm" />
+    <Button
+        android:id="@+id/button_10min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="10 MIN"
+        app:icon="@android:drawable/ic_lock_idle_alarm"
+        app:layout_constraintBottom_toTopOf="@+id/button_20min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_5min" />
 
-        <Button
-            android:id="@+id/button_10min"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="275dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="408dp"
-            android:text="10 MIN"
-            app:icon="@android:drawable/ic_lock_idle_alarm" />
+    <Button
+        android:id="@+id/button_15min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="72dp"
+        android:text="15 MIN"
+        app:icon="@android:drawable/ic_lock_idle_alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_20min" />
 
-        <Button
-            android:id="@+id/button_15min"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="54dp"
-            android:layout_marginTop="494dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginBottom="189dp"
-            android:text="15 MIN"
-            app:icon="@android:drawable/ic_lock_idle_alarm" />
-
-        <Button
-            android:id="@+id/button_20min"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="54dp"
-            android:layout_marginTop="380dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginBottom="300dp"
-            android:text="20 MIN"
-            app:icon="@android:drawable/ic_lock_idle_alarm" />
-
-    </RelativeLayout>
+    <Button
+        android:id="@+id/button_20min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="96dp"
+        android:text="20 MIN"
+        app:icon="@android:drawable/ic_lock_idle_alarm"
+        app:layout_constraintBottom_toTopOf="@+id/button_15min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_10min" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
